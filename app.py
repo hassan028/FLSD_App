@@ -16,7 +16,7 @@ st.header('Face Liveness Spoofing Detection')
 st.sidebar.subheader(("Input a Face Picture"))
 
 #Get Image
-file_up = st.sidebar.file_uploader('Upload an Image')
+file_up = st.sidebar.file_uploader('Upload an Image', type="png")
 
 def img_to_bytes(img):
     buffered = BytesIO()
